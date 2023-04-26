@@ -1,0 +1,74 @@
+/*-- scss:defaults --*/
+
+//@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// fonts
+$presentation-heading-font: 'Raleway', sans-serif;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-monospace: 'JetBrains Mono', monospace;
+$presentation-font-size-root: 24px;
+$presentation-font-smaller: 0.7rem;
+//$presentation-line-height: 1.2;
+
+// remainder
+$body-bg: #fff;
+$body-color: #222;
+$text-muted: lighten($body-color, 50%);
+$link-color: #2a76dd;
+$link-color-hover: lighten($link-color, 15%);
+$selection-bg: lighten($link-color, 25%);
+$selection-color:	$body-bg;
+$border-color: lighten($body-color, 30%);
+$border-width: 1px;
+$border-radius:	3px;
+
+// heading
+//$presentation-heading-color:	$body-color;
+//$presentation-heading-line-height: 2;
+//$presentation-heading-letter-spacing: normal;
+//$presentation-heading-text-transform: none;
+//$presentation-heading-text-shadow: none;
+//$presentation-h1-text-shadow: none;
+//$presentation-heading-font-weight: 600;
+//$presentation-h1-font-size:	2.5em;
+//$presentation-h2-font-size:	1.6em;
+//$presentation-h3-font-size:	1.3em;
+//$presentation-h4-font-size:1em;
+//$presentation-block-margin:	12px;
+$presentation-slide-text-align: left;
+$presentation-title-slide-text-align:center;
+$code-block-bg: #eee8d5;
+$code-block-border-color: transparent;
+$code-block-font-size:	0.6em;
+$code-color: firebrick;
+$code-bg: gainsboro;
+$tabset-border-color: $code-block-border-color;
+$light-bg-text-color:	#222;
+$light-bg-link-color:	#2a76dd;
+$light-bg-code-color:	#4758ab;
+$dark-bg-text-color:	#fff;
+$dark-bg-link-color:	#42affa;
+$dark-bg-code-color:	#ffa07a;
+
+/*-- scss:rules --*/
+// Align all of title slide to the left
+#title-slide {
+  text-align: left;
+
+  .quarto-title-authors {
+    justify-content: left;
+  
+    .quarto-title-author {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+}
+
+// slightly adjust blockquote padding
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
