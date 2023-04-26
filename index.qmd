@@ -59,7 +59,7 @@ ggplot2::theme_set(cowplot::theme_half_open())
    - **CCC** - concordance correlation coefficient: a measure of agreement/precision.
      - *The closer to 1, the better*
 
-# Example: Lyon dataset
+# Example: Loyn dataset
 
 ## About
 
