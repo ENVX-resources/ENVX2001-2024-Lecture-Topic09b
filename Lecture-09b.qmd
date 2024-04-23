@@ -109,7 +109,7 @@ From now on, we will work with the **training set only**.
 
 In this lecture we will just look at histograms.
 
-## Boxplots
+## Histograms
 
 ```{r}
 library(Hmisc)
@@ -174,9 +174,8 @@ check_model(full_fit)
 
 Use the `step()` function perform backwards stepwise selection. This function uses AIC to select the best model. 
 
-:::{.callout-note}
 Depending on the dataset splitting, the best model may be different each time we randomly sample the data. In this case we should all have the same results as we set the seed.
-:::
+
 
 ```{r}
 step_fit <- step(full_fit, direction = "backward")
@@ -227,9 +226,7 @@ The following functions are available:
 - `epi.ccc()` from the `epiR` package: `epi.ccc(y, y_hat)`
 - `cor()` from base R: `cor(y, y_hat)`
 
-We need to use calculations for:
-
-- ME: `mean(y - y_hat)`
+We need to use calculations for ME: `mean(y - y_hat)`
 
 Recall:
 
