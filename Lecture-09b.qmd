@@ -2,7 +2,7 @@
 title: "Regression: predictive modelling -- Part 2"
 subtitle: "ENVX2001 - Applied Statistical Methods"
 author:
-  - name: Januar Harianto
+  - name: Liana Pozza
     affiliations: The University of Sydney
 date: last-modified
 self-contained: true
